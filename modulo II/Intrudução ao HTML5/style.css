@@ -54,3 +54,7 @@ a{
 .content_list li a{
     text-decoration: none;
 }
+
+.linked{
+    list-style-image: url("linkedin.png");    
+}
