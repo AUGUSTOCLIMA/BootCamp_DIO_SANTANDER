@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align-self</title>
+    <style>
+        .flex-container{
+            max-width: 350px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            display: flex;
+        }
+        .item{
+            background-color: orangered;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+        .direction{
+            flex-direction: column;
+        }
+        .align-container{
+            align-items: center;
+        } 
+        .center{
+            align-self: center;
+        }
+        .start{
+            align-self: flex-start;
+        }
+        .end{
+            align-self: flex-end;
+        }
+        .baseline{
+            align-self: baseline;
+        }
+        .stretch{
+            align-self: stretch;
+        }
+        .auto{
+            align-self: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>row</h1>
+    <section class="flex-container align-container">
+        <div class="item auto">1ljfdb</div>
+        <div class="item auto">2ljfdbfdsl</div>
+        <div class="item auto">3ljfd bfbfd fbfdb dfbfdbpoj </div>
+        <div class="item auto">4ljfdf</div>
+    </section>
+    <p>align mix</p>
+    <section class="flex-container align-container">
+        <div class="item center">1ljfdb</div>
+        <div class="item start">2ljfdbfdsl</div>
+        <div class="item auto">3ljfd bfbfd fbfdb dfbfdbpoj </div>
+        <div class="item end">4ljfdf</div>
+    </section>
+
+    <h1>colunm</h1>
+    <section class="flex-container align-container direction">
+        <div class="item auto">1ljfdb</div>
+        <div class="item auto">2ljfdbfdsl</div>
+        <div class="item auto">3ljfd bfbfd fbfdb dfbfdbpoj </div>
+        <div class="item auto">4ljfdf</div>
+    </section>
+    <p>align mix</p>
+    <section class="flex-container align-container direction">
+        <div class="item center">1ljfdb</div>
+        <div class="item start">2ljfdbfdsl</div>
+        <div class="item auto">3ljfd bfbfd fbfdb dfbfdbpoj </div>
+        <div class="item end">4ljfdf</div>
+    </section>
+
+</body>
+</html>
